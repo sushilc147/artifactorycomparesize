@@ -6,7 +6,7 @@ path = ArtifactoryPath(f"{settings.URL}/", auth=(settings.USERNAME, settings.PAS
 print(path)
 
 # ''items.find({"type":"file"}).sort({"$desc": ["size"]}).limit(100) '
-artifacts = path.aql('items.find', {"type": "file"}, '.sort()', {'$desc': ['size']},  '.limit', '100')
+artifacts = path.aql('items.find', {"type": "file"}, '.sort', {'$desc': ['size']},  '.limit', '100')
 
 # aql_args = [
 #     'items.find',{
