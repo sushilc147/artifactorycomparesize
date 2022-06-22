@@ -3,8 +3,15 @@ import settings
 
 # API Key
 path = ArtifactoryPath(f"{settings.URL}/", auth=(settings.USERNAME, settings.PASSWORD))
-
 print(path)
 
-for p in path:
-    print(p)
+# ''items.find({"type":"file"}).sort({"$desc": ["size"]}).limit(100) '
+artifacts = path.aql('items.find', {"type": "file"}, '.sort()', {'$desc': ['size']},  '.limit', '100')
+
+# aql_args = [
+#     'items.find',{
+#
+#     }
+# ]
+
+print(artifacts)
