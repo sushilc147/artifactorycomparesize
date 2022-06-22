@@ -5,6 +5,7 @@ name = "pypi"
 
 [packages]
 python-decouple = "*"
+dohq-artifactory = "*"
 
 [dev-packages]
 
