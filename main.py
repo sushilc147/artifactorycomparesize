@@ -57,6 +57,8 @@ To test on actual device uncomment codes above
 #     }
 # }
 # """
+# va_artifacts = pa_artifacts
+
 pa_artifacts = json.loads(pa_artifacts)
 va_artifacts = json.loads(va_artifacts)
 field_names = (

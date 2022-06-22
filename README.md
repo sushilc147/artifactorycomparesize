@@ -48,7 +48,8 @@ in the terminal, you can simply run the following commands to add your environme
 ```shell
 $ export ARTIFACTORY_USERNAME="your_user_name"
 $ export ARTIFACTORY_PASSWORD="your_password"
-$ export ARTIFACTORY_URL="https://yoururl.com"
+$ export ARTIFACTORY_URL_PA="https://your-pa-url.com"
+$ export ARTIFACTORY_URL_VA="https://your-va-url.com"
 ```
 
 or use `.env.sample` file as a template to create a `.env` file in your working directory.
