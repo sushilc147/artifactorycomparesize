@@ -49,7 +49,6 @@ in the terminal, you can simply run the following commands to add your environme
 $ export ARTIFACTORY_USERNAME="your_user_name"
 $ export ARTIFACTORY_PASSWORD="your_password"
 $ export ARTIFACTORY_URL="https://yoururl.com"
-$ export ARTIFACTORY_PORT=8081   # artifactory port
 ```
 
 or use `.env.sample` file as a template to create a `.env` file in your working directory.
