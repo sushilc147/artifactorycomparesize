@@ -1,0 +1,17 @@
+# docker run --name artifactory -v $JFROG_HOME/artifactory/var/:/var/opt/jfrog/artifactory -d -p
+# 8081:8081 -p 8082:8082 releases-docker.jfrog.io/jfrog/artifactory-oss:latest
+
+version: '3.9'
+services:
+  artifactory:
+    image: releases-docker.jfrog.io/jfrog/artifactory-oss:latest
+    container_name: artifactory_test
+    environment:
+      JFROG_HOME: value
+    ports:
+      - 8081:8081
+      - 8082:8082
+
+    volumes:
+      - ./artifactory_volume:/var/opt/jfrog/artifactory
+
